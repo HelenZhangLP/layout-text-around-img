@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="">
+	<title>实现图片居中，文字环绕效果</title>
+	<style type="text/css">
+		.content {
+			position: relative;
+			width: 522px;
+			height: 500px;
+			border: solid 1px #333;
+			background-color: #fdfdfd;
+			padding: 10px;
+			margin: 100px auto;
+		}
+		img{
+			width: 341px;
+			height: 228px;
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.description {
+			width: 261px;
+			height: 100%;
+			overflow: hidden;
+		}
+		.left {float: left;}
+		.right {float: right;text-align: right;}
+		.left::before,
+		.right::before {
+			width: 170px;
+			height: 228px;
+			content: '';
+		}
+		.left::before {
+			float: right;
+		}
+		.right::before {
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<img src="./1.jpg" alt="" />
+		<div class="description left">现在，从图中已经可以看到文本之间给图片留出了足够的空间，接下来我们需要做的就是将图片绝对定位到相应位置。或者可以直接将需要环绕的元素放进一个容器中，然后使用负向 margin .
+现在，从图中已经可以看到文本之间给图片留出了足够的空间，接下来我们需要做的就是将图片绝对定位到相应位置。或者可以直接将需要环绕的元素放进一个容器中，然后使用负向 margin .
+现在，从图中已经可以看到文本之间给图片留出了足够的空间，接下来我们需要做的就是将图片绝对定位到相应位置。或者可以直接将需要环绕的元素放进一个容器中，然后使用负向 margin .
+现在，从图中已经可以看到文本之间给图片留出了足够的空间，接下来我们需要做的就是将图片绝对定位到相应位置。或者可以直接将需要环绕的元素放进一个容器中，然后使用负向 margin .
+现在，从图中已经可以看到文本之间给图片留出了足够的空间，接下来我们需要做的就是将图片绝对定位到相应位置。或者可以直接将需要环绕的元素放进一个容器中，然后使用负向 margin .
+现在，从图中已经可以看到文本之间给图片留出了足够的空间，接下来我们需要做的就是将图片绝对定位到相应位置。或者可以直接将需要环绕的元素放进一个容器中，然后使用负向 margin .
+现在，从图中已经可以看到文本之间给图片留出了足够的空间，接下来我们需要做的就是将图片绝对定位到相应位置。或者可以直接将需要环绕的元素放进一个容器中，然后使用负向 margin .
+现在，从图中已经可以看到文本之间给图片留出了足够的空间，接下来我们需要做的就是将图片绝对定位到相应位置。或者可以直接将需要环绕的元素放进一个容器中，然后使用负向 margin .
+现在，从图中已经可以看到文本之间给图片留出了足够的空间，接下来我们需要做的就是将图片绝对定位到相应位置。或者可以直接将需要环绕的元素放进一个容器中，然后使用负向 margin .
+		</div>
+		<div class="description right">
+			然而要想实现这种布局却并不简单，当前我们可以使用的布局方式都没法创建这种类型的布局。实际上，从某种角度来看，它看起来也没有什么布局可言。我这样的想法是正确的吗？我觉得即使是最顶尖的 CSS 布局系统也无法实现地处理上述布局。这种布局中的文字可以环绕着文字，非常类似 float 浮动效果，唯一的不同在于，文字是四周环绕的效果，那么浏览器中是否有一种 float: center 或者 float: both 方法呢，不幸的是，暂时还没有。
+			然而要想实现这种布局却并不简单，当前我们可以使用的布局方式都没法创建这种类型的布局。实际上，从某种角度来看，它看起来也没有什么布局可言。我这样的想法是正确的吗？我觉得即使是最顶尖的 CSS 布局系统也无法实现地处理上述布局。这种布局中的文字可以环绕着文字，非常类似 float 浮动效果，唯一的不同在于，文字是四周环绕的效果，那么浏览器中是否有一种 float: center 或者 float: both 方法呢，不幸的是，暂时还没有。
+			然而要想实现这种布局却并不简单，当前我们可以使用的布局方式都没法创建这种类型的布局。实际上，从某种角度来看，它看起来也没有什么布局可言。我这样的想法是正确的吗？我觉得即使是最顶尖的 CSS 布局系统也无法实现地处理上述布局。这种布局中的文字可以环绕着文字，非常类似 float 浮动效果，唯一的不同在于，文字是四周环绕的效果，那么浏览器中是否有一种 float: center 或者 float: both 方法呢，不幸的是，暂时还没有。
+		</div>
+	</div>
+
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src=""></script>
+	
+</body>
+</html>
